@@ -44,6 +44,26 @@ console.log(hours);
 console.log(min);
 console.log(sec);
 
+console.log(setNumbers(hours));
+
+function setNumbers(num) {
+	/*
+	if (num < 10) num = '0' + num;
+
+	if (num < 10) {
+		result = '0' + num;
+	} else {
+		result = num;
+	}
+	*/
+	//조건식 ? true일때 실행할 구문 : false일때 실행할 구문
+	//삼황연산자 구문안에는 대입연산자가 들어올 수 없기 때문에 괄호로 묶어서 표현식으로 변경  <num < 10 ? (result = '0' + num) : >(result = num);
+	//특정값이 else일 때 굳이 실행할 코드가 없다면 &&연산자 활용
+	num < 10 && (num = '0' + num);
+	return num;
+}
+
+/*
 if (12 > hours >= 0) {
 	if (hours > 10) {
 		console.log(`${hours}-A.M.`);
@@ -57,5 +77,5 @@ if (12 > hours >= 0) {
 	} else {
 		console.log(`0${el}-P.M.`);
 	}
-}
+}*/
 //추가작업
