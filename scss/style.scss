@@ -1,1 +1,41 @@
 @import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+	width: 100%;
+	height: 100vh;
+	background: gray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	&.mornig {
+		background-image: url(../img/bg_morning.jpg);
+	}
+
+	&.afternoon {
+		background-image: url(../img/bg_afternoon.jpg);
+	}
+
+	&.evening {
+		background-image: url(../img/bg_evening.jpg);
+	}
+
+	&.night {
+		background-image: url(../img/bg_night.jpg);
+	}
+
+	article {
+		width: 60%;
+		height: 50%;
+		background-color: rgba(0, 0, 0, 0.4);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		font-size: 50px;
+	}
+}
